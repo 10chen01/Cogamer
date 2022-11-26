@@ -1,11 +1,9 @@
 #pragma once
 
 #include<bits/stdc++.h>
+#include "Macro.hpp"
 
 using namespace std;
-
-#define count_for(cnt) for(int i=1;i<=cnt;i++)
-#define pr_cnt_char(cnt, ch) count_for(cnt){printf(ch);}
 
 class Game {
     public:
