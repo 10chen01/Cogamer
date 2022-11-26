@@ -2,7 +2,7 @@
 
 #define count_for(cnt) for(int i=1;i<=cnt;i++)
 #define pr_cnt_char(cnt, ch) count_for(cnt){printf(ch);}
-#define pr_line(ch) pr_cnt_char(20)
+#define pr_line(ch) pr_cnt_char(20, ch)
 
 // ASNI normal text
 #define reset "\033[0m"
@@ -12,6 +12,8 @@
 #define light(str) "\033[2m"#str
 #define italic(str) "\033[4m"#str
 #define u_shad(str) "\033[5m"#str
+#define mirror(str) "\033[7m"#str
+#define a_shad(str) "\033[8m"#str
 
 // ASNI color normal
 #define __default 39
@@ -37,7 +39,7 @@
 #define fg_cyan(str) "\033[36"#str
 #define fg_white(str) "\033[37"#str
 
-#define bg_default(str) "\033[49"#str
+#define bg_default (str) "\033[49"#str
 #define bg_black(str) "\033[40"#str
 #define bg_red(str) "\033[41"#str
 #define bg_green(str) "\033[42"#str
