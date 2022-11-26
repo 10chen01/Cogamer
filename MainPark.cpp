@@ -1,8 +1,8 @@
-#include<bits/stdc++.h>
+//build of g++
 
-using namespace std;
+#include "HeaderInfo.hpp"
 
 int main(){
-    
+    pr_cnt_char(10, "=");
     return 0;
 }
