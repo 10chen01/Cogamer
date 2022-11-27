@@ -8,10 +8,10 @@ int main(int argc,char* argv[]){
     char* varg = argv[1];
     if(varg == "NullExcept"){
         system("clear");
-        printf("\n" bold(Input Number Is Invalid!) reset "\n");
+        printf("\n" bold_fg_red(Input Number Is Invalid!) reset "\n");
     }
     else{
         system("clear");
-        printf("\n" bold(Unknown Error.) reset "\n");
+        printf("\n" bold_fg_blue(Unknown Error.) reset "\n");
     }
 }
