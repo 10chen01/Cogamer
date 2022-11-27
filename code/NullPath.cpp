@@ -1,22 +1,17 @@
 #include<bits/stdc++.h>
 #include "Macro.hpp"
+#include "unistd.h"
 
 using namespace std;
 
 int main(int argc,char* argv[]){
     char* varg = argv[1];
     if(varg == "NullExcept"){
-        system("cls");
-        pr_line("X");
-        printf("\n" bold("Input Number Is Invalid!\n") reset "\n");
-        pr_line("X");
-        system("pause");
+        system("clear");
+        printf("\n" bold(Input Number Is Invalid!) reset "\n");
     }
     else{
-        system("cls");
-        pr_line("E");
-        printf("\n" bold("Unknown Error.") reset "\n");
-        pr_line("E");
-        system("pause");
+        system("clear");
+        printf("\n" bold(Unknown Error.) reset "\n");
     }
 }
