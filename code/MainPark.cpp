@@ -1,9 +1,8 @@
 //build of g++
 
-#include "HeaderInfo.hpp"
+#include "GameClass.hpp"
+#include "Info.hpp"
 #include "Macro.hpp"
-
-
 
 int main(){
     pr_cnt_char(20, "=");

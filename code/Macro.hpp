@@ -3,6 +3,7 @@
 #define count_for(cnt) for(int i=1;i<=cnt;i++)
 #define pr_cnt_char(cnt, ch) count_for(cnt){printf(ch);}
 #define pr_line(ch) pr_cnt_char(20, ch)
+#define with_for(item,vec) for(item : vec)
 
 // ASNI normal text
 #define reset "\033[0m"

@@ -10,17 +10,20 @@ class Game {
     public:
         char * path;
         vector<char*> args;
-        Game(){
-            path = "./NullPath";
-            args[1] = "NullExcept";
-        }
-        Game(char * p){
-            path = p;
+        char * game_name;
+        Game(char * p, vector<char*> arg, char * game) : path(p), args(arg), game_name(game) {}
+        Game(char * p, char* game) : path(p), game_name(game) {
             args[1] = "NormalSetup";
         }
-        Game(char * p, vector<char*> arg){
-            args = arg;
+        Game(char * name) : path("./NullPath"), game_name(game){
+            args[1] = "NullExcept";
         }
+        Game() : path("./NullPath"), game_name("Unknown") {
+            args[1] = "NullExcept";
+        }
+        /**
+         * can use `Game game(...); game();` to setup.
+         * */
         void operator()(){
             char * obj;
             strcat(obj, path);
