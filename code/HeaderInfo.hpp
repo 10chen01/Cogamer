@@ -1,6 +1,7 @@
 #pragma once
 
 #include<bits/stdc++.h>
+#include<unistd.h>
 #include "Macro.hpp"
 
 using namespace std;
@@ -10,7 +11,7 @@ class Game {
         char * path;
         vector<char*> args;
         Game(){
-            path = "./NullPath.exe";
+            path = "./NullPath";
             args[1] = "NullExcept";
         }
         Game(char * p){
