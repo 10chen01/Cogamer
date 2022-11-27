@@ -8,9 +8,16 @@ int main(int argc,char* argv[]){
     if(varg == "NullExcept"){
         system("cls");
         pr_line("X");
-        printf(bold("Input Number Is Invalid!\n"));
+        printf("\n" bold("Input Number Is Invalid!\n") "\n");
         pr_line("X");
         system("pause");
+        return 0;
+    }
+    else{
+        system("cls");
+        pr_line("E");
+        printf("\n" bold("Unknown Error.") "\n");
+        pr_line("E");
         return 0;
     }
 }
