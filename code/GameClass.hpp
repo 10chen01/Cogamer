@@ -15,7 +15,7 @@ class Game {
         Game(char * p, char* game) : path(p), game_name(game) {
             args[1] = "NormalSetup";
         }
-        Game(char * name) : path("./NullPath"), game_name(game){
+        Game(char * game) : path("./NullPath"), game_name(game){
             args[1] = "NullExcept";
         }
         Game() : path("./NullPath"), game_name("Unknown") {
